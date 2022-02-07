@@ -192,7 +192,7 @@ yunohost service add $app --description="Dendrite Matrix homeserver" --log="/var
 ynh_script_progression --message="Starting a systemd service..." --weight=1
 
 # Start a systemd service
-ynh_systemd_action --service_name=$app --action="start" --log_path="systemd" #--line_match="Starting external Monolith listener"
+ynh_systemd_action --service_name=$app --action="start" --log_path="systemd" --line_match="Started Dentrite Matrix homeserver"
 
 #=================================================
 # RELOAD NGINX
