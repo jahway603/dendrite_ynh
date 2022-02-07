@@ -38,7 +38,7 @@ global:
   # The path to the signing private key file, used to sign requests and events.
   # Note that this is NOT the same private key as used for TLS! To generate a
   # signing key, use "./bin/generate-keys --private-key matrix_key.pem".
-  private_key: matrix_key.pem
+  private_key: __FINALPATH__/matrix_key.pem
 
   # The paths and expiry timestamps (as a UNIX timestamp in millisecond precision)
   # to old signing private keys that were formerly in use on this domain. These

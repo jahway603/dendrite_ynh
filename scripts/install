@@ -118,6 +118,13 @@ ynh_script_progression --message="Configuring NGINX web server..." --weight=1
 ynh_add_nginx_config
 
 #=================================================
+#CREAT PRIVATE KEY
+#=================================================
+ynh_script_progression --message="Generate a signing key..." --weight=1
+
+$final_path/bin/generate-keys --private-key matrix_key.pem
+
+#=================================================
 # SPECIFIC SETUP
 #=================================================
 # BUILDING SOURCES AND SETTING UP THE SERVER
